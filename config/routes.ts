@@ -5,21 +5,9 @@
     // redirect: '/menu1/sub1', // 加了这个所有子页面都不渲染了
     routes: [
       {
-        path: 'menu1', // 这个是用来模拟重定向的
-        name: '菜单分类一',
-        component: './menu1/menu1sub1/menu1sub1list.tsx',
-        hideInMenu: true,
-      },
-      {
         path: '/menu1/sub1',
         name: '菜单分类一功能一列表',
         routes: [
-          {
-            path: '/menu1/sub1',
-            name: '菜单分类一功能一列表',
-            component: './menu1/menu1sub1/menu1sub1list.tsx',
-            hideInMenu: true,
-          },
           {
             path: '/menu1/sub1/detail',
             name: '菜单分类一功能一详情',
@@ -32,12 +20,6 @@
         path: '/menu1/sub2',
         name: '菜单分类一功能二列表',
         routes: [
-          {
-            path: '/menu1/sub2',
-            name: '菜单分类一功能二列表',
-            component: './menu1/menu1sub2/menu1sub2list.tsx',
-            hideInMenu: true,
-          },
           {
             path: '/menu1/sub2/detail',
             name: '菜单分类一功能二详情',
