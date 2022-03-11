@@ -2,11 +2,12 @@
   {
     path: '/menu1',
     name: '菜单分类一',
-    // redirect: '/menu1/sub1', // 加了这个所有子页面都不渲染了
+    redirect: '/menu1/sub1', // 加了这个所有子页面都不渲染了
     routes: [
       {
         path: '/menu1/sub1',
         name: '菜单分类一功能一列表',
+        redirect: '/menu1/sub1/detail',
         routes: [
           {
             path: '/menu1/sub1/detail',
@@ -19,6 +20,7 @@
       {
         path: '/menu1/sub2',
         name: '菜单分类一功能二列表',
+        redirect: '/menu1/sub2/detail',
         routes: [
           {
             path: '/menu1/sub2/detail',
